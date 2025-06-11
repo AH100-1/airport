@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNU AIRPORT - 항공 예약 시스템</title>
-    <style>
-            </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <div class="container">
@@ -20,7 +20,7 @@
         </div>
         <div class="user-info">
             <span id="userWelcome" class="hidden">환영합니다, <span id="userName"></span>님!</span>
-            <button id="loginBtn" class="btn" onclick="showLogin()">로그인</button>
+            <button id="loginBtn" class="btn" onclick="window.location.href='login.html'">로그인</button>
             <button id="logoutBtn" class="btn btn-secondary hidden" onclick="logout()">로그아웃</button>
         </div>
     </div>
@@ -34,7 +34,7 @@
 
         <!-- 항공편 검색 -->
         <div class="booking-search">
-            <h3 style="margin-bottom: 20px; color: white;">✈️ 항공편 검색</h3>
+            <h3 style="margin-bottom: 20px; color: white;">🔍 항공편 검색</h3>
             <div class="search-form">
                 <div class="form-group">
                     <label style="color: white;">출발지</label>
@@ -85,8 +85,8 @@
         <!-- 주요 기능 -->
         <div class="feature-grid">
             <div class="feature-card" onclick="checkUserAndNavigate('bookingManagement')">
-                <div class="icon">🎫</div>
-                <h3>예약 관리</h3>
+                <div class="icon">📋</div>
+                <h3>&#128203; 예약 관리</h3>
                 <p>항공편 예약 현황을 확인하고 관리하세요</p>
             </div>
             <div class="feature-card" onclick="checkUserAndNavigate('seatSelection')">
@@ -100,7 +100,7 @@
                 <p>예약을 취소하고 환불을 신청하세요</p>
             </div>
             <div class="feature-card" onclick="checkUserAndNavigate('myBookings')">
-                <div class="icon">📋</div>
+                <div class="icon">📅</div>
                 <h3>나의 예약</h3>
                 <p>예약 내역과 상태를 확인하세요</p>
             </div>
